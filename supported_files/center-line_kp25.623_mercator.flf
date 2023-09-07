@@ -1,0 +1,136 @@
+# WARNING: DO NOT CHANGE THE PARAMETERS IN THIS GEODESY HEADER MANUALLY
+# Datum Transformations in Fugro Software: Always go From WGS84 To Local, and
+# Use the Coordinate Frame Rotation convention as defined by UKOOA
+################################################################################
+
+# Datum Name
+DatumHorizontal.szName                 : WGS84
+# Spheroid Name
+DatumHorizontal.Spheroid.szName        : WGS84
+# Semi Major Axis in metres
+DatumHorizontal.Spheroid.dSMAxis       : +6378137.00000000
+# Inverse Flattening
+DatumHorizontal.Spheroid.dIFlattening  : +298.257223563000
+# Shift in X Axis in metres
+DatumHorizontal.Transform.dDX          : +0.000000000000000
+# Shift in Y Axis in metres
+DatumHorizontal.Transform.dDY          : +0.000000000000000
+# Shift in Z Axis in metres
+DatumHorizontal.Transform.dDZ          : +0.000000000000000
+# Rotation about X Axis in seconds
+DatumHorizontal.Transform.dRX          : +0.000000000000000
+# Rotation about Y Axis in seconds
+DatumHorizontal.Transform.dRY          : +0.000000000000000
+# Rotation about Z Axis in seconds
+DatumHorizontal.Transform.dRZ          : +0.000000000000000
+# Scale Correction in ppm
+DatumHorizontal.Transform.dK           : +0.000000000000000
+################################################################################
+
+# Vertical Datum Name
+DatumVertical.szName                   : ""
+# Geoid-Ellipsoid Separation from WGS84 Ellipsoid to Geoid in metres
+DatumVertical.dEllipsoidalSeparation   : +0.000000000000000
+################################################################################
+
+# Projection Name
+Projection.szName                      : Mercator
+# Projection Type
+#	1 = Transverse Mercator
+#	2 = Lambert Conformal Conical 2 Parallels
+#	3 = Lambert Conformal Conical 1 Parallel
+#	4 = Rectified Skewed Orthomorphic
+#	5 = New Zealand Map Grid
+#	6 = Mercator
+#	7 = Stereographic (Dutch)
+#	8 = Stereographic (General)
+#	9 = Universal Transverse Mercator
+#	10 = Ordnance Survey Great Britain (OSGB36)
+#	11 = South Africa Gauss Conform
+#	12 = Albers Conic Equal Area
+#	13 = Krovak Conformal Oblique Conic
+#	14 = Northern Ireland
+#	15 = Republic Of Ireland
+#	16 = Cassini Soldner
+#	17 = Rijks Driehoek Trans 2004
+#	18 = New Zealand TM 2000
+#	19 = Broome (BRO94)
+# 20 = Polyconic
+Projection.lType                       : 6
+# Projection Grid Name
+Projection.szGridName                  : ""
+# Grid Latitude Origin in decimal degrees
+Projection.dLatOrigin                  : +20.0000000000000
+# Grid Longitude Origin / Central Meridian in decimal degrees
+Projection.dCMeridian                  : +90.0000000000000
+# Easting at Grid Origin in metres
+Projection.dFalseE                     : +4000000.00000000
+# Northing at Grid Origin in metres
+Projection.dFalseN                     : +1000000.00000000
+# Central Scale Factor at the Grid Origin
+Projection.dCSFact                     : +1.00000000000000
+################################################################################
+
+# Type of Range Calculation
+#	1 = Grid
+#	2 = Vincenty
+#	3 = Rhumbline
+lRangeCalculationType                  : 2
+################################################################################
+
+# Convergence Convention
+#	0 = Rest of World
+#	1 = Australia/New Zealand
+lANZConvergence                        : 0
+# Factor to convert Grid Units To metres
+GeoUnits.dUnitsConversion              : +1.00000000000000
+# Units Name, like 'metres', 'feet'
+GeoUnits.dUnitsName                    : metres
+# Units Abbreviation,like 'm', 'ft'
+GeoUnits.dUnitsAbbrev                  : m
+################################################################################
+
+#
+# File Coordinate Format
+#     1 = Local Easting/Northing
+#     2 = Local Latitude/Longitude in the format sDDD.dddddddd
+#     3 = Local Latitude/Longitude in the format sDDD.MMmmmmmm
+#     4 = Local Latitude/Longitude in the format sDDD.MMSSssss
+#     5 = WGS84 Latitude/Longitude in the format sDDD.dddddddd
+#     6 = WGS84 Latitude/Longitude in the format sDDD.MMmmmmmm
+#     7 = WGS84 Latitude/Longitude in the format sDDD.MMSSssss
+Line.iFCF                              : 1
+#
+# KP Units
+#     0 = Metres
+#     1 = Kilometres
+Line.iKPUnits                          : 0
+#
+# KP Type
+#     1 = Grid
+#     2 = Spheroidal
+#     3 = Rhumbline
+Line.iKPType                           : 1
+#
+# Line points in format:
+#    Easting, Northing, Z, Kp, Point type, Arc direction
+# or
+#    Latitude, Longitude, Z, Kp, Point type, Arc direction
+# Point type: 
+#     0 = Straight point
+#     1 = Arc start
+#     2 = Arc end
+#     3 = Arc centre (radius point)
+#     4 = Arc Intersection point
+#     5 = Arc radius (stored in the kp value)
+#
+# Line index: 0
+#
+Line.szName                            : 8160_ASE_CL
+7349809.118592,2991543.047243,0.000000,0.000000,0,0,
+7345400.941505,2989084.030858,0.000000,5084.904772,0,0,
+7342393.399006,2985065.973987,0.000000,10141.798855,0,0,
+7339866.949231,2983540.142719,0.000000,13115.999532,0,0,
+7335052.166965,2982017.972116,0.000000,18204.990505,0,0,
+7331931.836991,2982897.640410,0.000000,21472.249078,0,0,
+7327813.973580,2982994.668244,0.000000,25623.295247,0,0,
